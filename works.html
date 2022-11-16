@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="works.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- モーダルウィンドウのCSS + JS -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/animatedModal.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>Works</title>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <nav class="side-bar">
+                <div class="header-logo-box">
+                    <a class="index-link header-list-logo" href="./index.html"><img class="header-logo"
+                            src="./images/toukalogo4.png" alt="logo"></a>
+                    <a class="about-link header-list-item" href="./about.html"><img class="mono-logo"
+                            src="./images/image.man.png" alt="logo">
+                        <p class="header-list-item__title">About</p>
+                    </a>
+                    <div class="works-link header-list-item"><img class="mono-logo" src="./images/image.notepc.png"
+                            alt="logo">
+                        <p class="header-list-item__title">Works</p>
+                    </div>
+                    <a class="contact-link header-list-item" href="./contact.html"><img class="mono-logo"
+                            src="./images/image.phone.png" alt="logo">
+                        <p class="header-list-item__title">Contact</p>
+                    </a>
+                    <div class="hamburger">
+                        <div class="hamburger-btn">
+                            <div class="btn-area">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="open-hd">
+                            <a class="open-item" href="./about.html"><img class="mono-logo" src="./images/image.man.png"
+                                    alt="logo">
+                                <p class="">About</p>
+                            </a>
+                            <a class="open-item" href="./works.html"><img class="mono-logo"
+                                    src="./images/image.notepc.png" alt="logo">
+                                <p class="">Works</p>
+                            </a>
+                            <a class="open-item" href="./contact.html"><img class="mono-logo"
+                                    src="./images/image.phone.png" alt="logo">
+                                <p class="">Contact</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-box">
+                <div class="inner">
+                    <div class="header-title">
+                        <h1>Works..</h1>
+                        <p>制作物</p>
+                    </div>
+
+                    <div class="main-sentence">
+                        <p>
+                            過去に制作したものになります。<br>
+                            画像を押すことでページに飛ぶことができるようになっております。
+                        </p>
+                    </div>
+
+                    <div class="work-box">
+                        <ul class="line delayScroll">
+                            <li class=" work-item">
+                                <a id="demo01" class="first-line-item1" href="#animatedModal1" target="_blank">
+                                    <img src="images/scshot-kita.png" alt="">
+                                    <span class="work-item-sentence">
+                                        |　　北関東学院　　|
+                                    </span>
+                                </a>
+                            </li>
+                            <li class=" work-item">
+                                <a id="demo02" href="#animatedModal2" target="_blank" class="first-line-item2">
+                                    <img src="./images/scshot-cat2.png" alt="">
+                                    <span class="work-item-sentence">
+                                        |猫カフェ～ごろごろ～|
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="line delayScroll">
+                            <li class=" work-item">
+                                <a id="demo03" href="#animatedModal3" target="_blank" class="second-line-item1">
+                                    <img src="./images/diz-screenshot.png" alt="">
+                                    <span class="work-item-sentence">
+                                        |　株式会社 Diz　|
+                                    </span>
+                                </a>
+                            </li>
+                            <li class=" work-item">
+                                <a id="demo04" href="#animatedModal4" target="_blank" class="second-line-item2">
+                                    <img src="./images/sizingHunter.png" alt="">
+                                    <span class="work-item-sentence">
+                                        |　　Hunter.　　|
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="line delayScroll">
+                            <li class=" work-item">
+                                <a href="./index.html" class="thurd-line-item1">
+                                    <img src="./images/hotel.image.webp" alt="">
+                                    <span class="work-item-sentence">
+                                        |　　sample　　|
+                                    </span>
+                                </a>
+                            </li>
+                            <li class=" work-item">
+                                <a href="./index.html" class="thurd-line-item2">
+                                    <img src="./images/color-1229859_960_720.jpg" alt="">
+                                    <span class="work-item-sentence">
+                                        |　　sample　　|
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ↓ここからモーダルリンクの飛び先 -->
+            <div class="modal-sample">
+                <!-- <a id="demo01" href="#animatedModal1">DEMO01</a> -->
+                <!-- ↑プラグインの例文　↓北関東のモーダル -->
+                <div id="animatedModal1">
+                    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                    <a class="close-animatedModal" href="./works.html">
+                        +
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-box">
+                            <div class="modal-title">
+                                <h2>北関東学院<br><a href="https://ojagao.github.io/kitakanto/"
+                                        target="_blank">実際のサイトはこちら→</a></h2>
+                            </div>
+                            <div class="modal-info">
+                                <dl>
+                                    <dt>◆作品概要</dt>
+                                    <dd>職業訓練校に通い初めて１ヶ月程通った時期に課題で作成した
+                                        職業訓練校の擬似サイトになります。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作時間</dt>
+                                    <dd>
+                                        静的な部分のコーディングに15時間程度。<br>
+                                        CSSでのハンバーガーメニューにてこずりレスポンシブに10時間程度。<br>
+                                        習っていないJQueryを調べながら15時間程度。合計約40時間。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆こだわり</dt>
+                                    <dd>
+                                        ・レスポンシブができる限り綺麗になるようにした点<br>
+                                        ・レスポンシブがどのサイズでも崩れがないようにした点<br>
+                                        ・初めてスマホサイズから制作<br>
+                                        ・CSSのみでハンバーガーとアコーディオンを実装<br>
+                                        ・スマホとPCの用途の違いに合わせて電話のメニューを変更
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆コンセプト</dt>
+                                    <dd>
+                                        実際に使われているWEBページはカラーにまとまりが無く、
+                                        ページ内リンクなどがなく欲しい情報に適宜移ることが出来ない
+                                        というのが気になった点であり、主な連絡手段が電話であると言うふうに
+                                        感じ取れたのでスマホサイズでは直接電話につながるような設計にし、パソコンサイズでは
+                                        直接電話をかける人はほとんどいないだろうということで電話番号のみの表記にしております。
+                                        <br><br>
+                                        全体的なコンセプトとしては青を基調として自分が実際に職業訓練校に通おう。
+                                        と思った際にわからなくて困ったことなどを解消できるように致しました。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆改善点</dt>
+                                    <dd>
+                                        ・卒業後のビジョンをわかりやすく示したかった<br>
+                                        ・写真の素材がなかなか集まらずに統一感がなく伝えたい情報にマッチしない写真を使っている。<br>
+                                        ・開講中のクラスに関する情報をリアルタイムで更新できる機能をつけたかった<br>
+                                        ・開講するクラスごとの下層ページなども制作したかった。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆苦労した点</dt>
+                                    <dd>
+                                        ・通い始めて１ヶ月の時期に制作を始めたこともあり
+                                        HTML,CSS,JQueryの基礎的な部分もおろそかな状態で
+                                        制作に取り掛かった為一つ一つ調べながらでとても時間がかかった点<br><br>
+                                        ・最初にデザインを決める段階でこんなにデザインを考えるのが大変なのかと痛感させられ
+                                        結局いろんなサイトから参考にしたりしながらオリジナリティーのあるモノにできなかった点<br><br>
+                                        ・あまり理解度の高くないものをカスタマイズしようとした時に崩れがどこが原因で起きているのかが
+                                        なかなかわからずにすごい時間を費やしてしまった点<br><br>
+                                        ・CSSのみでハンバーガーとアコーディオンを実装しようと思ったときに
+                                        HTML側の構造に制限が付きまとってしまいなかなか思い通りのデザインや
+                                        動きを実装できなかった点<br><br>
+                                        ・レスポンシブというものがそもそも中々理解が足りてなく
+                                        シンプルにレスポンシブに苦労致しました
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作を通してのコメント</dt>
+                                    <dd>
+                                        HTML,CSSへの理解が深まりJQueryというものの概要をつかむ機会となりました。
+                                        日頃見るハンバーガーメニューやアコーディオンメニュー等、
+                                        動きのある機能を実装できた時は感動しました。
+                                        リッチな動きなどはまだ実装できませんでしたが
+                                        今後リッチな動きを実装できるようになりたいと思わされました。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="modal-img">
+                            <img src="./images/screencapture-ojagao-github-io-kitakanto-2022-11-05-15_18_28.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 猫カフェのモーダル -->
+                <div id="animatedModal2">
+                    <a class="close-animatedModal" href="./works.html">
+                        +
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-box">
+                            <div class="modal-title">
+                                <h2>猫カフェ～ごろごろ～<br><a href="https://ojagao.github.io/catcafe/"
+                                        target="_blank">実際のサイトはこちら→</a></h2>
+                            </div>
+                            <div class="modal-info">
+                                <dl>
+                                    <dt>◆作品概要</dt>
+                                    <dd>職業訓練校に通い初めて１ヶ月半程通った時期に自主的に作成した
+                                        猫カフェの架空サイトになります。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作時間</dt>
+                                    <dd>
+                                        静的な部分のコーディングに25時間程度。<br>
+                                        レスポンシブに20時間程度。<br>
+                                        JQueryを調べながら5時間程度。<br>
+                                        合計約50時間。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆こだわり</dt>
+                                    <dd>
+                                        ・やわらかい雰囲気で統一した点<br>
+                                        ・レスポンシブした点<br>
+                                        ・初めてJQueryでハンバーガー制作<br>
+                                        ・headerで初めてkeyframeを使い動きをを実装<br>
+                                        ・コンタクトページで中に文字を入れて整頓した点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆コンセプト</dt>
+                                    <dd>
+                                        本猫カフェは猫の可愛さや癒しというのをテーマに制作いたしました。
+                                        そのサービスやコンテンツに適した写真の素材や、
+                                        色使いというのを心がけてコーディングを行いました。
+                                        <br><br>
+                                        全体的なコンセプトとしては淡い雰囲気を基調として、
+                                        日ごろの仕事に疲れや不満があり猫に癒しを求める女性の方をターゲットとしました。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆改善点</dt>
+                                    <dd>
+                                        ・background-imageとimgタグで出来ることがアバウトだったのでそこを整理しなおしてコーディングしたい。<br>
+                                        ・positionを多用してしまったことにより強引にデザインを整えたが故にレスポンシブにとても苦労した点<br>
+                                        ・お店のこだわりなど強みをもう少し押し出したページにしたかった<br>
+                                        ・細かい部分でのデザインの崩れがみられるのでHTML側から整えたい。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆苦労した点</dt>
+                                    <dd>
+                                        ・中々思い通りのデザインにならず、強引に整えるためにpositionの多用の結果
+                                        高さが浮いてしまったり、レスポンシブの際に崩れがひどかったりとpositionはできる限り使わず、
+                                        特定のコンテンツの中で整えるために正しく使おうと思いました。<br><br>
+                                        ・画像のサイズなどがなかなか合わずに思い通りのデザインにならなかった点<br><br>
+                                        ・淡い雰囲気にするために疑似要素で全体的に淡くしたのですが
+                                        その弊害でaタグが機能しなくなったりはっきりさせたい部分も淡くなってしまった点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作を通してのコメント</dt>
+                                    <dd>
+                                        HTML,CSSへの理解が深まりJQueryを一から書いてみる機会となりました。
+                                        全体的に雰囲気を統一して複数ページを作るという経験は初めてでしたので
+                                        出来上がった時の達成感がありました。
+                                        keyframeで様々なことができるんだなと少しリッチな動きも実装出来て楽しかったです。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="modal-img">
+                            <img src="./images/screencapture-ojagao-github-io-catcafe-survice-html-2022-11-07-10_57_38.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="animatedModal3">
+                    <a class="close-animatedModal" href="./works.html">
+                        +
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-box">
+                            <div class="modal-title">
+                                <h2>株式会社 Diz<br><a href="https://ojagao.github.io/Diz/" target="_blank">実際のサイトはこちら→</a>
+                                </h2>
+                            </div>
+                            <div class="modal-info">
+                                <dl>
+                                    <dt>◆作品概要</dt>
+                                    <dd>職業訓練校に通い初めて2ヶ月程通った時期に自主的に作成した
+                                        IT系会社の架空サイトになります。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作時間</dt>
+                                    <dd>
+                                        静的な部分のコーディングに30時間程度。<br>
+                                        レスポンシブに15時間程度。<br>
+                                        JQueryが10時間程度。<br>
+                                        slick,particleに10時間程度<br>
+                                        合計約65時間。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆こだわり</dt>
+                                    <dd>
+                                        ・触れたことのないプラグインを積極的に使った点<br>
+                                        ・CSSで細やかなアニメーションを実装した点<br>
+                                        ・JSでマウスストーカーを実装<br>
+                                        ・ダウンロードの際にいきなりPDFなどがダウンロードされ無いように確認を入れた点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆コンセプト</dt>
+                                    <dd>
+                                        本IT系サイトは先進的なイメージというのをテーマに制作いたしました。
+                                        普通の企業だと鬱陶しく感じられるマウスストーカーなどや、
+                                        particleなどによる動きを取り入れました。
+                                        <br><br>
+                                        全体的なコンセプトとしてはグラデーションを用いた配色を基調として、
+                                        その分他の場所はシンプルにしております。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆改善点</dt>
+                                    <dd>
+                                        ・indexのページのマウスストーカーの動きが重くなってしまった点。<br>
+                                        ・トップページのファーストインパクトが弱くなってしまった点<br>
+                                        ・求人の部分などはさらに細かくして新卒、キャリア等更に下層ページまで作成したかった<br>
+                                        ・デザインがなんとなく納得がいかなく、その理由がわからない点。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆苦労した点</dt>
+                                    <dd>
+                                        ・様々なプラグインを取り入れたことにより動作が重くなってしまい、
+                                        その原因を特定して改善しようとコード事態や順番を見直したりした点<br><br>
+                                        ・JQuery等で共通化をしていないのでheaderの変更に苦労した点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作を通してのコメント</dt>
+                                    <dd>
+                                        プラグインやライブラリといったものを積極的に使うをコンセプトに制作したので、
+                                        slick,particleを使いJSでマウスストーカーを実装出来たことに喜びや楽しさを感じました。
+                                        ただ初めて動作が重くなって困るという事態に遭遇しましたので今後軽量化等にも目を向けていきたいと思いました。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="modal-img">
+                            <img src="./images/screencapture-ojagao-github-io-Diz-2022-11-07-15_30_23.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="animatedModal4">
+                    <a class="close-animatedModal" href="./works.html">
+                        +
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-box">
+                            <div class="modal-title">
+                                <h2>Hunter.<br><a href="https://ojagao.github.io/Hunter/" target="_blank">実際のサイトはこちら→</a>
+                                </h2>
+                            </div>
+                            <div class="modal-info">
+                                <dl>
+                                    <dt>◆作品概要</dt>
+                                    <dd>職業訓練校に通い初めて2ヶ月通った時期に作成した
+                                        美容サロンの架空サイト( LP )になります。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作時間</dt>
+                                    <dd>
+                                        静的な部分のコーディングに10時間程度。<br>
+                                        レスポンシブに4時間程度。<br>
+                                        JQueryが3時間程度。<br>
+                                        その他様々な修正3時間<br>
+                                        合計約20時間。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆こだわり</dt>
+                                    <dd>
+                                        ・一つ一つのホバー等の動きをこだわり一から作成<br>
+                                        ・CSSで細やかなアニメーションを実装した点<br>
+                                        ・JQueryでスクロールの方向を取得<br>
+                                        ・timeタグのdatetime,itempropなどを用いてSEOを意識したコーディング<br>
+                                        ・日付選択をプラグインを用いて実装した点<br>
+                                        ・時間を意識して３日という目標で作った点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆コンセプト</dt>
+                                    <dd>
+                                        本美容系サイトは清潔感と高級感を意識して作成しました。
+                                        高級感を出しすぎないように、スタッフの人柄の良さや体験談などを交えたページです。
+
+                                        <br><br>
+                                        全体的なコンセプトとしては白を基調にグレーと黒のシックなサイトに仕上げました。
+                                        高級感と誠実さが感じられやすいようにそのような配色にしました。
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆改善点</dt>
+                                    <dd>
+                                        ・女性をターゲットにしているのでもう少し色味のあるサイトが良かったのではないか<br>
+                                        ・画像等に妥協してしまったので当初のイメージとは異なってしまった点<br>
+                                        ・BLOGのエリアはSEOの観点から取り入れたが、もう少し作りこめたなという点<br>
+                                        ・後半のデザインの物足りなさ。<br>
+                                        ・日付選択画面のユーザビリティーをもう少し高めたかった点<br>
+                                        ・あと４時間ほど短縮して二日で完成させたかった点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆苦労した点</dt>
+                                    <dd>
+                                        ・SVGを用いたリッチな動きを実装するにあたり外から取り入れたものと
+                                        自分が一から書いているものがなかなか繋がらずに手こずった点<br><br>
+                                        ・下スクロール時にヘッダーが現れる動きを実装したのだが1pxでも上にあがると
+                                        消えてしまい動きの激しいUIになってしまうのでそこのバッファを持たせた点
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>◆制作を通してのコメント</dt>
+                                    <dd>
+                                        今回は新しい技術というよりも既存の技術で素早く制作するという目標で制作をはじめ、
+                                        もう少し早く終われると思っていたのですが素材探し等に時間を思ったよりもとられてしまい
+                                        想定時間を数時間オーバーしてしまった。素材等がそろっていて変に凝るようなことが無ければ、
+                                        二日もかからずにできたと思うので先に素材をそろえて、実装したい動きもまとめてから作業を開始することを意識して気を付けていきたい。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="modal-img">
+                            <img src="./images/screencapture-127-0-0-1-5500-index-html-2022-11-14-13_10_32.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+
+        function delayScrollAnime() {
+            var time = 0.2;
+            var value = time;
+            $(".delayScroll").each(function () {
+                let parent = this;
+                let scroll = $(window).scrollTop();
+                let elePos = $(this).offset().top;
+                let winH = $(window).height();
+                let child = $(this).children();
+
+                if (scroll >= elePos - winH && !$(parent).hasClass("swich")) {
+                    $(child).each(function () {
+
+                        if (!$(this).hasClass("fadeUp")) {
+
+                            $(parent).addClass("swich");
+                            $(this).addClass("fadeUp");
+                            $(this).css("animation-delay", value + "s");
+                            value = value + time;
+
+                            var index = $(child).index(this);
+                            if ((child.length - 1) == index) {
+                                $(parent).removeClass("swich");
+                            }
+                        }
+
+                    });
+                } else {
+                    $(child).removeClass("fadeUp");
+                    value = time;
+                }
+            });
+        }
+
+        $(window).on('load', function () {
+            delayScrollAnime();
+        })
+
+        $(window).scroll(function () {
+            delayScrollAnime();
+        });
+
+        // modal
+        $("#demo01").animatedModal({
+            animatedIn: "fadeIn",
+            animatedOut: "fadeOut",
+            color: "black",
+        });
+
+        $("#demo02").animatedModal({
+            animatedIn: "fadeIn",
+            animatedOut: "rotateOut",
+            color: "black",
+        });
+
+        $("#demo03").animatedModal({
+            animatedIn: "fadeIn",
+            animatedOut: "rotateOut",
+            color: "black",
+        });
+
+        $("#demo04").animatedModal({
+            animatedIn: "fadeIn",
+            animatedOut: "rotateOut",
+            color: "black",
+        });
+
+        // hamburger
+        $(".hamburger").on("click", function () {
+            $(".btn-area").toggleClass("swich");
+            $(".open-hd").toggleClass("swich");
+        })
+
+    </script>
+</body>

@@ -1,0 +1,663 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+}
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: bottom;
+    background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+input {
+    box-sizing: border-box;
+}
+
+/* kokokara */
+
+html {
+    height: auto;
+}
+
+body {
+    color: white;
+    background: url(./images/1663240298820.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -50;
+    position: relative;
+}
+
+.box:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -40;
+}
+
+.box {
+    display: flex;
+}
+
+header {
+    flex-basis: 100px;
+}
+
+.hamburger {
+    display: none;
+}
+
+main {
+    flex-basis: 100%;
+    margin-left: 8px;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100px;
+    border-right: solid 1px #5d5d5d;
+    z-index: 1;
+}
+
+.header-logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-list-logo {
+    width: 100px;
+    text-align: center;
+    transition: 0.8s;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+.header-list-logo:hover {
+    transform: scale(1.1);
+    border: none;
+}
+
+.header-list-item {
+    width: 100px;
+    height: 10vh;
+    margin-top: 12vh;
+    text-align: center;
+    transition: 0.65s;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+.header-list-item:hover {
+    opacity: 0.8;
+    transform: scale(1.3);
+    border: none;
+}
+
+.contact-link {
+    transform: scale(1.3);
+    border: none !important;
+}
+
+.contact-link p{
+    color: #ffffff;
+}
+
+.contact-link:hover {
+    transform: scale(1.3);
+}
+
+.header-logo{
+    width: 100%;
+    /* max-width: 15px 5vw; */
+}
+
+.header-list-item__title{
+    font-family: 'Ms Madi', cursive;
+    color: white;
+    margin-top: 4px;
+}
+
+.mono-logo {
+    height: 60%;
+}
+
+.main-box {
+    height: auto;
+    width: 100%;
+}
+
+.inner {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 850px;
+}
+
+.header-title {
+    margin-top: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding:0 0 15px 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header-title h1{
+    font-family: 'Ms Madi', cursive;
+    font-size: 5rem;
+}
+
+.header-title p {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.ct-form {
+    width: 100%;
+    margin: 20px auto 40px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #00000066;
+}
+
+input,textarea {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border-bottom:1px solid rgb(189, 189, 189);
+    border-right: 1px solid rgb(189, 189, 189);
+}
+
+.ct-title {
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+}
+
+.ct-upper {
+    width: 19em;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+
+.ct-title span {
+    color: rgb(255, 181, 21);
+}
+
+
+.ct-form-item {
+    display: flex;
+}
+
+.ct-form-item span {
+    color: rgb(255, 181, 21);
+}
+
+.ct-form-item dl{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.ct-form-item dt{
+    text-align: right;
+    width: 25%;
+    margin-right: 5%;
+}
+
+.ct-form-item dd{
+    text-align: left;
+    width: 75%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.ct-radio dd input {
+    transform: scale(1.3);
+    padding-top: 6px;
+    margin: 0 4px 0 0;
+    padding-right: 20px;
+}
+
+.ct-form-item dd label{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.name-form dl{
+    display: flex;
+    align-items: center;
+}
+
+.name-form dd input {
+    padding-top: 6px;
+    margin: 0 4px 0 0;
+    padding-right: 20px;
+    height: 1.5em;
+    width: 50%;
+}
+
+.mail-form-dd {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start !important;
+    text-align: start;
+}
+
+.mail-form-dd input {
+    height: 1.5em;
+    width: 100%;
+}
+
+
+.number-form input {
+    width: 20%;
+    height: 1.5em;
+}
+
+.button-box {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    border-top: 1px solid rgb(188, 188, 188);
+    border-left: 1px solid rgb(188, 188, 188);
+    border-bottom: none;
+    border-right: none;
+}
+
+@media screen and (max-width : 1024px){
+    .inner {
+        width: 80%;
+    }
+
+    .header-title {
+        border-bottom: 3px white solid;
+    }
+
+    .header-title h1 {
+        font-size: 4rem;
+    }
+
+    .header-title p {
+        font-size: 1.5rem;
+    }
+
+    .main-sentence p{
+        font-size: 1.2rem;
+    }
+
+    .ct-form {
+        padding: 8px;
+    }
+
+    .ct-form-item dl {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .ct-form-item dt {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .ct-form-item dd {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    .box {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger-btn {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        position: fixed;
+        top: 8px;
+        right: 2vw;
+        z-index: 999;
+    }
+
+    .btn-area {
+        transition: 0.6s;
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    .btn-area span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        width: 45%;
+    }
+
+    .btn-area span:nth-of-type(1) {
+        top: 15px;
+    }
+
+    .btn-area span:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .btn-area span:nth-of-type(3) {
+        top: 31px;
+    }
+
+    .btn-area.swich .openbtn-area {
+        transform: rotate(360deg);
+    }
+
+    .btn-area.swich span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .btn-area.swich span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .btn-area.swich span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    .open-hd {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        bottom: 120%;
+        transition: 0.5s;
+    }
+
+    .open-hd.swich {
+        bottom: 0;
+    }
+
+    .side-bar {
+        height: 100px;
+        width: 100%;
+    }
+
+    .header-logo-box {
+        flex-direction: row;
+        display: block;
+        width: 100%;
+        height: 100px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .open-item {
+        display: flex;
+        width: 90%;
+        margin: 24px auto 80px;
+        align-items: center;
+        border-bottom: #fff 1px solid;
+        padding-bottom: 12px;
+    }
+
+    .open-item:first-child {
+        margin-top: 72px;
+    }
+
+    .mono-logo {
+        width: 120px;
+        height: 40px;
+        padding: 0 40px;
+        display: block;
+    }
+
+    .header-list-item {
+        border: none;
+        margin-top: 0;
+        width: 72px;
+        transition: 0.3s;
+        display: none;
+    }
+
+    .header-list-item:hover {
+        transform: scale(1.1);
+    }
+
+    .header-list-logo {
+        border: none;
+        width: 72px;
+        margin-left: 2vw;
+        margin-top: 0;
+        display: block;
+    }
+
+    .header-list-logo:hover {
+        transform: scale(1.1);
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .header-title {
+        margin-top: 100px;
+    }
+
+    .header-title h1{
+        font-size: 3rem;
+    }
+
+    .header-title p{
+        font-size: 1.2rem;
+        right: 0;
+    }
+
+    .ct-upper {
+        width: auto;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .ct-upper p {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .name-form dd input {
+        width: 35%;
+    }
+
+    .ct-form-item dd {
+        width: 100%;
+        flex-wrap: wrap;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .ct-form-item dd label{
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ct-form-item dt {
+        padding-bottom: 4px;
+    }
+
+    .number-form input {
+        width: 25%;
+    }
+}
